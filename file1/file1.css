@@ -108,7 +108,10 @@ img{
     outline: 0;
     box-shadow: none;
 }
-
+.navbar-toggler{
+    outline: none;
+    border: none;
+}
 
 @media only screen and (max-width: 1110px){
     .navbar .navbar-nav .nav-link{
