@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,100;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&family=Ms+Madi&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,700&family=Shadows+Into+Light&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+*{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+    font-weight: 500;
+ }
+ 
+    
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Modal-----*/
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+
+
+/*----
+.top-nav{
+    background-color: rgb(255, 132, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.top-nav p{
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: white;
+}
+.top-nav i,
+.top-nav span{
+    vertical-align: middle;
+}
+----*/
+
+
+
+
+
+/*-----Navbar---------*/
+.navbar{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}
+
+
+.navbar .navbar-nav .nav-link{
+    margin-right: 20px;
+    color: rgb(12, 10, 10);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: #0086b3;
+   font-weight: 600;
+}
+   
+
+.brand{
+    z-index: 1000 !important;
+}
+.brand-logo{
+    width: 150px;
+    height: 75px;
+}
+
+.btn{
+    padding: 9px 20px;
+    font-weight: 600; 
+    background-color:#0086b3;
+    color: white;
+}
+.btn:hover{
+    color: #0086b3;
+}
+.btn-info{
+    padding: 8px 18px;
+    border-radius: 15px;
+    background-color: #0086b3;
+    border: none;
+    color: white;
+    font-size: small;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+@media only screen and (max-width: 1110px){
+    .navbar .navbar-nav .nav-link{
+        margin-right: 10px;
+        font-size: 13px;
+    }
+    .brand-logo{
+        width: 120px;
+        height: 65px;
+    }
+   }
+
+/*----------Bootstrap 5 Carousel------------*/
+  
+
+   .carousel-item{
+    height: 100vh;
+    min-height: 300px;
+   }
+   .carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+   }
+   .carousel-item .overlay{
+    background:linear-gradient(to top, rgba(6, 78, 134, 0.4), rgba(29, 60, 83, 0.6));
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+}
+
+   .carousel-caption h5{
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+   }
+
+   .carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+    font-weight: 600;
+   }
+   .carousel-caption a{
+    display: inline-block;
+    padding: 9px 20px;
+    margin-top: 15px;
+   }
+   .carousel-inner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+   }
+
+   @media only screen and (max-width:767px){
+    .carousel-caption{
+        bottom: 180px;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+    .carousel-caption p{
+        font-size: 14px;
+        width: 80%;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+   }
+
+
+   @media only screen and (max-width: 400px){
+    .carousel-caption h5{
+        font-size: 27px;
+    }
+   }
+
+/*----------About 關於我們-------------*/
+
+section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    min-height: 100vh;
+}
+section.home{
+    margin-top: 0;
+}
+
+section .title{
+    background-color: rgb(241, 241, 241);
+    padding: 25px;
+    letter-spacing: 10px;
+    z-index: -1;
+}
+
+.about-banner{
+    /*--
+    background-image: url('https://cdn.pixabay.com/photo/2020/07/21/17/07/the-girl-and-the-robot-5426850_960_720.jpg');
+    --*/
+    background-image: url('../file1/office/1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: normal;
+    height: 80vh;
+}
+
+.sub-title:before{
+    content: '';
+    height: 10px;
+    width: 24px;
+    background-color: #0086b3;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+@media only screen and (max-width: 767px){
+    .about-banner{
+        height: 50vh;
+    }
+}
+@media only screen and (max-width: 427px){
+    .about-banner{
+        height: 40vh;
+    }
+}
+
+
+/*------Develop、solution 獨家技術、解決方安---------*/
+
+.intro{
+    margin-bottom: 40px;
+
+}
+
+.intro h6{
+    font-weight: 400;
+    color: rgb(236, 52, 23);
+}
+.intro p{
+    max-width: 600px;
+    margin: auto;
+}
+
+.tech-box{
+    padding: 32px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech h5{
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.tech-box{
+   
+}
+
+
+/*----- 近期作品 5D WEB 美術館----------*/
+
+.project-img{
+    height: 300px;
+}
+.sophia-img{
+   height: 300px;
+   object-fit: contain;
+}
+.project{
+    position: relative;
+}
+.project .overlay{
+    background:linear-gradient(to bottom, rgba(9, 32, 50, 0.0), rgba(9, 32, 50, 0.8));
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+}
+
+.project .content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 32px;
+}
+.project h4,
+.project h6{
+    color: white;
+}
+
+.project h6:before{
+    content: '';
+    height: 2px;
+    width: 24px;
+    background-color: red;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+
+/*----- 近期作品 Sophia 智能咖啡秤----------*/
+.project-box{
+    padding: 32px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+/*-------Footer------------*/
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: rgb(238, 228, 228);
+    text-align: center;
+    background-color: #070707;
+}
+
+footer .navbar-brand{
+    color: white;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-top{
+    margin-bottom: 20px;
+}
+.footer-bottom{
+    padding-top: 20px;
+    border-top: 1px solid rgba(3, 148, 197, 0.2);
+}
+
+footer .social-links a{
+    margin-left: 5PX;
+    margin: 5PX;
+}
+.social-links a{
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.social-links a:hover{
+    background-color: white;
+    color: rgb(16, 178, 183);
+}
+
+
+/*------Form------*/
+
+   .form-control:focus,
+   .form-control:active{
+    box-shadow: none;
+    border-color: #0086b3;
+    box-shadow: none;
+    background-color: #0086b3;
+   }
+
+
+ /*Animation-----*/
+
+   .animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+  }
+
+  .animate__animated.animate__fadeInBottomRight {
+    --animate-duration: 2s;
+  }
+
+  .animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+  }
+
+
+/*---------Meta world Banner----
+
+.meta-banner{
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover ;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.3);
+}
+
+.meta-banner .container{
+    overflow: hidden;
+}
+.meta-banner h3{
+   color: white;
+   position: absolute;
+   bottom: 1.25rem;
+   max-width: 550px;
+   padding-right: 1.5rem;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(120, 137, 141);
+    background: linear-gradient(90deg, rgba(20, 71, 84, 0.3) 15%, rgba(25,84,91,0.2) 100%, rgb(32, 43, 46) 100%);
+
+}
+
+@media only screen and (max-width: 767px){
+    .meta-banner{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 427px){
+    .meta-banner{
+        height: 50vh;
+    }
+}
+
+-------------*/
+
+/*-------Meta World Video background------*/
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #333;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.08);
+    min-height: 80vh;
+    background-image: rgba(0,0,0,0.5)
+}
+
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: black;
+    z-index: -1;
+}
+
+/*-----Video background 用youtube film -------*
+
+.twp-video-background{
+    background: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+iframe{
+    width: 100%;
+    height: 100vh;
+}
+
+.twp-video-foreground,
+.twp-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+/*
+.twp-video-foreground{
+    padding-bottom: 56.25%;
+    box-sizing: border-box;
+}
+
+.twp-video-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+*/
+ 
+/*------Meta Section-----*/
+
+.meta-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meta-info{
+    margin: 20px auto;
+    line-height: 2;
+    width: 80%;
+}
+
+.meta-content .meta-info span:before{
+    content: '';
+    height: 5px;
+    width: 5px;
+    background-color: #0086b3;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 10px;
+    
+}
+@media only screen and (max-width: 991px){
+    .meta-container{
+        flex-flow: row-wrap;
+    }
+    
+    .meta-container .container-img{
+        display: block;
+        order: 1;
+        width: 100%;;
+    }
+    .meta-container .meta-content{
+        display: block;
+        order: 2;
+        width: 100%;
+    }
+    .meta-info{ 
+        width: 100%;
+    }
+    .meta-content .meta-title{
+        text-align: center;
+    }
+}
